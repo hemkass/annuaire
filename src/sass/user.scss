@@ -1,0 +1,88 @@
+@import "./variable.scss";
+
+.User {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin: 5vw;
+  width: 90vw;
+
+  height: 99vh;
+
+  h2 {
+    font-family: $HeadTitleFont;
+    font-size: 30px;
+    color: $dark;
+    font-weight: 600;
+    padding-bottom: 5px;
+  }
+
+  h1 {
+    font-family: $HeadTitleFont;
+    font-size: 40px;
+    color: $dark;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+
+  h3 {
+    font-family: $SubtitleFont;
+    font-size: 14px;
+    color: $dark;
+    font-weight: 300;
+    padding-bottom: 5px;
+  }
+
+  .company {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-box {
+    border: 2px solid $color1;
+    display: flex;
+    gap: 50px;
+    height: 70%;
+    width: 90%;
+
+    .contact-details {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 25%;
+      height: 100%;
+
+      .contact-key {
+        font-family: $SubtitleFont;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    .map-box {
+      padding-left: 0;
+      height: 100%;
+      width: 100%;
+
+      border-left: 2px solid $color1;
+
+      .address {
+        padding: 10px;
+        height: max-content;
+        border-bottom: 2px dashed $dark;
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+}
+.map-marker {
+  font-size: 40px;
+  color: red;
+}
